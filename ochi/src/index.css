@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
-/* * {
-  background-color: black;
-} */
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/ochi/public/fonts/NeueMontreal-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
