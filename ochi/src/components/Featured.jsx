@@ -36,6 +36,71 @@ function Featured() {
               ></img>
             </div>
           </div>
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="absolute text-[#CDEA68] left-full font-['Neue_Montreal'] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase leading-none tracking-tighter text-8xl whitespace-nowrap">
+              {"Salience Labs".split("").map((item, index) => (
+                <span className="">{item}</span>
+              ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full bg-cover bg-center"
+                src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-663x551.png"
+              ></img>
+            </div>
+          </div>
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="absolute text-[#CDEA68] left-full font-['Neue_Montreal'] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase leading-none tracking-tighter text-8xl whitespace-nowrap">
+              {"Salience Labs".split("").map((item, index) => (
+                <span className="">{item}</span>
+              ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full bg-cover bg-center"
+                src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-663x551.png"
+              ></img>
+            </div>
+          </div>
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="absolute text-[#CDEA68] left-full font-['Neue_Montreal'] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase leading-none tracking-tighter text-8xl whitespace-nowrap">
+              {"Salience Labs".split("").map((item, index) => (
+                <span className="">{item}</span>
+              ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full bg-cover bg-center"
+                src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-663x551.png"
+              ></img>
+            </div>
+          </div>
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="absolute text-[#CDEA68] left-full font-['Neue_Montreal'] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase leading-none tracking-tighter text-8xl whitespace-nowrap">
+              {"Salience Labs".split("").map((item, index) => (
+                <span className="">{item}</span>
+              ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full bg-cover bg-center"
+                src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-663x551.png"
+              ></img>
+            </div>
+          </div>
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="absolute text-[#CDEA68] left-full font-['Neue_Montreal'] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase leading-none tracking-tighter text-8xl whitespace-nowrap">
+              {"Salience Labs".split("").map((item, index) => (
+                <span className="">{item}</span>
+              ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full bg-cover bg-center"
+                src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-663x551.png"
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>

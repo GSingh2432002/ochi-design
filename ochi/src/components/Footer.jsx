@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="flex gap-[15vw] font-['Neue_Montreal'] w-full h-screen text-[#212121] bg-[#F1F1F1] p-20">
-      <div className="w-1/2 h-full flex flex-col justify-between text-[#212121] ">
+      <div className="w-1/2 h-full flex flex-col justify-between text-[#212121]">
         <div className="heading">
           <h1 className="text-[7vw] uppercase leading-none font-semibold tracking-tighter -mb-5">
             eye-
