@@ -67,7 +67,7 @@ function About() {
         <div className="w-1/2 h-[70vh]">
           <img
             src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
-            className="w-full h-full rounded-2xl object-cover"
+            className="w-full h-full rounded-2xl object-cover bg-center"
           ></img>
         </div>
       </div>
