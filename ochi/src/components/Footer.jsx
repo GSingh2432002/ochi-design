@@ -42,61 +42,83 @@ function Footer() {
         </svg>
       </div>
       <div className="w-1/2">
-        <h1 className="text-[5vw] uppercase leading-none font-bold tracking-tight -mb-5">
+        <h1 className="text-[5vw] uppercase leading-none font-bold tracking-tight mb-15">
           Presentations
         </h1>
         <div className="dets mt-10">
-          <h1 className="block text-[1.1vw] font-light mb-5">S:</h1>
-          <a className="block text-[1.1vw] font-light" href="">
-            Instagram
-          </a>
-          <a className="block text-[1.1vw] font-light" href="">
-            Behance
-          </a>
-          <a className="block text-[1.1vw] font-light" href="">
-            Facebook
-          </a>
-          <a className="block text-[1.1vw] font-light" href="">
-            Linkedin
-          </a>
+          <h1 className="block text-[1.1vw] font-light mb-5 ">S:</h1>
+          {["Instagram", "Behance", "Facebook", "Linkedin"].map(
+            (platform, index) => (
+              <a
+                key={index}
+                className="relative block w-max text-[1.1vw] font-light mb-2 after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                href="#"
+              >
+                {platform}
+              </a>
+            )
+          )}
         </div>
+
         <div className="AgalBagal flex gap-[23vw]">
           <div className="dets mt-10">
             <h1 className="block text-[1.1vw] font-light mb-5">L:</h1>
-            <h1 className="block text-[1.1vw] font-light">
+            <h1 className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full">
               202-1965 W 4th Ave
             </h1>
-            <h1 className="block text-[1.1vw] font-light mb-10">
+            <h1 className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full">
               Vancouver, Canada
             </h1>
-            <h1 className="block text-[1.1vw] font-light">30 Chukarina St</h1>
-            <h1 className="block text-[1.1vw] font-light">Lviv, Ukraine</h1>
+            <h1 className="relative mt-[1vw] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full">
+              30 Chukarina St
+            </h1>
+            <h1 className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full">
+              Lviv, Ukraine
+            </h1>
           </div>
           <div className="dets mt-10">
             <h1 className="block text-[1.1vw] font-light mb-5">M:</h1>
-            <a className="block text-[1.1vw] font-light" href="">
+            <a
+              className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              href=""
+            >
               Home
             </a>
-            <a className="block text-[1.1vw] font-light" href="">
+            <a
+              className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              href=""
+            >
               Services
             </a>
-            <a className="block text-[1.1vw] font-light" href="">
+            <a
+              className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              href=""
+            >
               Our work
             </a>
-            <a className="block text-[1.1vw] font-light" href="">
+            <a
+              className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              href=""
+            >
               About us
             </a>
-            <a className="block text-[1.1vw] font-light" href="">
+            <a
+              className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              href=""
+            >
               Insights
             </a>
-            <a className="block text-[1.1vw] font-light" href="">
+            <a className="relative mt-[1.3px] block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full">
               Contact us
             </a>
           </div>
         </div>
         <div className="dets mt-10">
           <h1 className="block text-[1.1vw] font-light mb-5">E:</h1>
-          <a className="block text-[1.1vw] font-light" href="hello@ochi.design">
+          <a
+            className="relative inline-block text-[1.1vw] font-light after:content-[''] after:block after:w-0 after:h-[1.3px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            href="mailto:hello@ochi.design"
+          >
             hello@ochi.design
           </a>
         </div>
