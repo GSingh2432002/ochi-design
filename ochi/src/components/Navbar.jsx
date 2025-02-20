@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 function Navbar() {
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (previous && latest > previous) {
+      setHidden(true); // Hide navbar when scrolling down
+    } else {
+      setHidden(false); // Show navbar when scrolling up
+    }
+  });
+
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 font-['Neue_Montreal'] flex justify-between items-center">
+    <motion.nav
+      className="fixed z-[999] w-full px-20 py-6 font-['Neue_Montreal'] flex justify-between items-center 
+                 backdrop-blur-lg bg-white/10 transition-all duration-300 text-[#212121]"
+      animate={{ y: hidden ? "-100%" : "0%" }} // Slide up when scrolling down
+      transition={{ ease: "easeInOut", duration: 0.5 }}
+    >
       <div className="logo">
         <svg
           width="72"
@@ -34,11 +52,21 @@ function Navbar() {
         </svg>
       </div>
       <div className="links flex gap-10">
-        {["Services", "Our work", "About us", "Insights", "Contact us"].map((item, index) => (
-          <a key={index} className={`text-lg font-light ${index === 4 && "ml-72"}`}>{item}</a>
-        ))}
+        {["Services", "Our work", "About us", "Insights", "Contact us"].map(
+          (item, index) => (
+            <a
+              key={index}
+              className={`text-lg font-light relative group ${
+                index === 4 && "ml-72"
+              }`}
+            >
+              {item}
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#212121] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          )
+        )}
       </div>
-    </div>
+    </motion.nav>
   );
 }
 

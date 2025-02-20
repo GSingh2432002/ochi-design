@@ -59,7 +59,7 @@ function About() {
       <div className="w-full flex gap-5 border-t-[1px] mt-[6rem] pt-10 border-[#888888]">
         <div className="w-1/2">
           <h1 className="text-7xl">Our approach:</h1>
-          <button className="flex uppercase gap-10 items-center px-10 py-6 bg-zinc-900 mt-10 rounded-full text-white">
+          <button className="flex text-[1.1vw] uppercase gap-10 items-center px-10 py-6 bg-zinc-900 mt-10 rounded-full text-white">
             Read More
             <div className="w-3 h-3 bg-zinc-100 rounded-full"></div>
           </button>

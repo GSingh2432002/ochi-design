@@ -4,7 +4,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 
 function LandingPage() {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.3" className="w-full h-screen bg-zinc-900 pt-2">
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className="w-full h-screen bg-[#F1F1F1] font-['Neue_Montreal'] text-[#212121] pt-2 overflow-hidden">
       <div className="textstructure mt-52 px-20">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => {
           return (
@@ -43,7 +43,7 @@ function LandingPage() {
         ))}
 
         <div className="start flex items-center gap-2">
-          <div className="px-5 py-2 border-[1px] border-zinc-400 font-light text-2xl uppercase rounded-full">
+          <div className="px-[1vw] py-[.5vw] border-[1px] border-zinc-900 font-light text-2xl uppercase rounded-full">
             start the project
           </div>
           <div className="w-12 h-12 flex justify-center items-center rounded-full border-[2px] border-zinc-500 rotate-[45deg]">

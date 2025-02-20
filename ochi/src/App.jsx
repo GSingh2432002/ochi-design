@@ -7,21 +7,19 @@ import Eyes from './components/Eyes';
 import Featured from './components/Featured';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
-import Clients from './components/Clients';
 import LocomotiveScroll from 'locomotive-scroll';
 
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className='w-full min-h-screen text-white bg-zinc-900'>
+    <div className='w-full min-h-screen text-white bg-[#F1F1F1]'>
       <Navbar />
       <LandingPage />
       <Marquee />
       <About />
       <Eyes />
       <Featured />
-      <Clients />
       <Cards />
       <Footer />
     </div>
